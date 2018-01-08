@@ -4,7 +4,7 @@ Assignment 2 for Web Applications Development
 ## Steps to run web application:
 
 ### Step 1: 
-Run <b>yoga/databaseInstaller.php</b>, and it should automatically create the database for you and add the records.
+Run <b>databaseInstaller.php</b>, and it should automatically create the database for you and add the records.
 
 ### Step 2:
 Open <b>yoga/index.php</b>, and you will see the list of available classes and will be given the option to fill a form to book for the classes which still have available space.
