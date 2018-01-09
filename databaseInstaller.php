@@ -1,11 +1,11 @@
 <?php
-$connect = mysql_connect("localhost", "root", "") or die ("check your server connection.");
+$connect = mysqli_connect("localhost", "root", "") or die ("check your server connection.");
 
-mysql_query("DROP DATABASE yoga");
+mysqli_query($connect,"DROP DATABASE yoga");
 
-mysql_query("CREATE DATABASE yoga");
+mysqli_query($connect,"CREATE DATABASE yoga");
 
-mysql_select_db("yoga");
+mysqli_select_db($connect,"yoga");
 
 $course="CREATE TABLE course (
 id int(11) NOT NULL auto_increment,
@@ -41,9 +41,9 @@ PRIMARY KEY (id)
 )Engine=InnoDB AUTO_INCREMENT=1 ";
 
 
-$results = mysql_query($course) or die (mysql_error());
-$results = mysql_query($students) or die (mysql_error());
-$results = mysql_query($users) or die (mysql_error());
+$results = mysqli_query($connect, $course) or die (mysql_error());
+$results = mysqli_query($connect, $students) or die (mysql_error());
+$results = mysqli_query($connect, $users) or die (mysql_error());
 
 
 $conn = new mysqli("localhost", "root", "","yoga");
