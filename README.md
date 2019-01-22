@@ -1,5 +1,5 @@
 # Yoga Classes
-Assignment 2 for Web Applications Development
+A yoga class booking web application
 
 ## Steps to run web application:
 
